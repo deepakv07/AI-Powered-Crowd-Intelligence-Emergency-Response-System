@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono, [data-mono] {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom leaflet tooltip & popup polish */
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+.leaflet-popup-content {
+  margin: 0;
+  line-height: 1.4;
+}
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: #e2e8f0;
+}
+
+/* Custom subtle pulse for critical areas */
+@keyframes critical-pulse {
+  0% { transform: scale(0.98); opacity: 0.85; }
+  50% { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(0.98); opacity: 0.85; }
+}
+.animate-critical-pulse {
+  animation: critical-pulse 2s infinite ease-in-out;
+}

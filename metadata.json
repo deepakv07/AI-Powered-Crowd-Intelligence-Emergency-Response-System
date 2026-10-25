@@ -1,0 +1,6 @@
+{
+  "name": "KumbhRakshak — Smart Crowd Safety & Disaster Response",
+  "description": "Smart crowd safety, GIS risk monitoring, resilient communication, and emergency disaster response platform for Kumbh Mela and massive religious gatherings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
